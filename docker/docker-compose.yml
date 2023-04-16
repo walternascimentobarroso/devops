@@ -1,0 +1,9 @@
+version: "3.9"
+name: devops
+services:
+  ansible_devops:
+    container_name: ansible_devops
+    build: ./ansible
+    working_dir: /var/www
+    volumes:
+      - ../:/var/www
